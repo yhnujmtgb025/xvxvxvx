@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users = User.order(:firstname)
+    @users = User.find_by firstname: 'Thanh'
   end
 
   def show
