@@ -1,0 +1,13 @@
+
+<%= form_for  @upalbum, html: {id: "helo"}, validate: true do  |album|%>
+    <p>
+    <%=album.label :title %>
+    <%=album.text_field :title %><br/>
+    </p>
+     <p>
+    <%=album.submit "Edit"%>
+    </p>
+<% end %>
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>

@@ -1,0 +1,5 @@
+<h2></h2>
+<% @albums.each do |album|%>
+    <h4><%= link_to album.title, album%></h4>
+    <p><%= link_to "Edit",edit_album_path(album)%></p>
+<%end %>
