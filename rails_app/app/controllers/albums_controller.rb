@@ -10,7 +10,7 @@ class AlbumsController < ApplicationController
   def update
     @upalbum=Album.find(params[:id])
     if @upalbum.update_attributes(album_path)
-      flash[:notice] = "You have successfully logged out."
+      flash[:notice] = "The album has just updated"
       redirect_to albums_path
     else
       render "edit"

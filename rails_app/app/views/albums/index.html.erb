@@ -1,4 +1,13 @@
-<h2></h2>
+<section class="content" style="min-height: auto;">
+        <% flash.each do |key, value| %>
+            <div class="row">
+            <div class="alert alert-<%= key %>">
+                <%= value %>
+            </div>
+            </div>
+        <% end %>
+    </section>
+    <%= yield %>
 <% @albums.each do |album|%>
     <h4><%= link_to album.title, album%></h4>
     <p><%= link_to "Edit",edit_album_path(album)%></p>
